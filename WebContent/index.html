@@ -21,6 +21,31 @@
 							{{resumo}}
 						</div>
 					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-3" for="descricao">Descrição</label>
+						<div class="col-sm-9">
+							<textarea id="descricao" name="descricao" class="form-control" ngm-model="descricao" rows="6"></textarea>
+							{{descricao}}.
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-3" for="prazo">Pazo</label>
+						<div class="col-sm-9">
+							<input id="prazo" name="prazo" class="form-control" ng-model="prazo"/>
+							{{prazo}}
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-3" for="situacao">Situação</label>
+						<div class="col-sm-9">
+							<select id="situacao" name="prazo" class="form-control" ng-model="situacao">
+								<option value="">Selecione..</option>
+								<option value="pendente">Pendente</option>
+								<option value="concluido">Concluido</option>
+							</select>
+							{{situacao}}
+						</div>
+					</div>
 				</div>
 				<div class="panel-footer text-right">
 					<button type="button" class="btn btn-primary">Salvar</button>
