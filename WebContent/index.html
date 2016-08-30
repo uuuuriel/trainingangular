@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+	<title>Tarefas</title>
+</head>
+<body>
+	<form class=" form-horizontal">
+		<div class=" col-sm-6 col-sm-offset-3">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h2>Tarefa</h2>
+				</div>
+				<div class=" panel-body">
+					<div class="form-group" >
+						<label class="control-label col-sm-3" for="resumo">Resumo</label>
+						<div class="col-sm-9">
+							<input id="resumo" name="resumo" class="form-control" ng-model="resumo"/>
+							{{resumo}}
+						</div>
+					</div>
+				</div>
+				<div class="panel-footer text-right">
+					<button type="button" class="btn btn-primary">Salvar</button>
+					<button type="button" class="btn btn-danger">Salvar</button>
+				</div>				
+			</div>
+		</div>
+	</form>
+	
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+</body>
+</html>
